@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  
+  //added//
+  "engines": {
+    "node": "16.x"
+  },
+  //end added//
   
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
