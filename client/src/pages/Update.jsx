@@ -6,7 +6,7 @@ const Update = () => {
     const [book,setBook] = useState({
         title: "",
         desc: "",
-        price: null,
+        piece: null,
         cover: "",
     });
 
@@ -36,7 +36,7 @@ const Update = () => {
             <h1>Update Book</h1>
             <input type="text" placeholder='title' onChange={handleChange} name='title'/>
             <input type="text" placeholder='desc' onChange={handleChange}  name='desc'/>
-            <input type="number" placeholder='price' onChange={handleChange}  name='price'/>
+            <input type="number" placeholder='piece' onChange={handleChange}  name='piece'/>
             <input type="text" placeholder='cover' onChange={handleChange}  name='cover'/>
 
             <button className='formButton' onClick={handleClick}>Update</button>

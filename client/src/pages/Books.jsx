@@ -31,14 +31,14 @@ const Books = () => {
 
   return (
     <div>
-        <h1> My Book Shop</h1>
+        <h1> Book Collections</h1>
         <div className='books'>
             {books.map(book=>(
                <div className='book' key={book.id}>
                 {book.cover && <img src={book.cover} alt="" />}
                 <h2>{book.title}</h2>
                 <p>{book.desc}</p>
-                <span>{book.price}</span>
+                <span>{book.piece}</span>
                 <button className='delete' onClick={()=>handleDelete(book.id)}>Delete</button>
                 <button className='update'><Link to={`/update/${book.id}`}>Update</Link></button>
                             
